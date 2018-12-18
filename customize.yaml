@@ -29,7 +29,7 @@ light.dimmable_light_3:
 light.dimmable_light_4:
   friendly_name: Boven deur
 light.dimmable_light_5:
-  friendly_name: Aanrecht links
+  friendly_name: Gasstel links
 light.dimmable_light_6:
   friendly_name: Gootsteen
 
