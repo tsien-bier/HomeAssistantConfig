@@ -1,0 +1,39 @@
+sensor.leeuwarden_symbol:
+  friendly_name: Weer in Gersloot
+sensor.leeuwarden_temperature:
+  friendly_name: Temperatuur
+media_player.ludbalke:
+  hidden: true
+media_player.chromecastvoor:
+  hidden: true
+media_player.home_mini_achterkamer:
+  hidden: true
+media_player.lud:
+  hidden: true
+media_player.chromecast_garage:
+  hidden: true
+media_player.ludbalke_2:
+  hidden: true
+light.hue_color_lamp_1:
+  friendly_name: Lamp kast
+light.hue_color_lamp_2:
+  friendly_name: Lamp vensterbank
+ligth.hue_color_lamp_3:
+  friendly_name: Lamp Bar
+light.dimmable_light_1:
+  friendly_name: Aanrecht links
+light.dimmable_light_2:
+  friendly_name: Aanrecht rechts
+light.dimmable_light_3:
+  friendly_name: Gastel rechts
+light.dimmable_light_4:
+  friendly_name: Boven deur
+light.dimmable_light_5:
+  friendly_name: Aanrecht links
+light.dimmable_light_6:
+  friendly_name: Gootsteen
+
+
+
+
+

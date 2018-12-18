@@ -1,0 +1,45 @@
+default_view:
+  view: true
+  icon: mdi:home
+  entities:
+    - group.Achterkamer
+    - group.Algemeen
+    - group.Klimaat
+    - group.Energie
+    - group.Keuken
+
+Keuken:
+  name: Keuken
+  entities:
+    - light.hue_color_lamp_3
+    - light.dimmable_light_4
+    - light.dimmable_light_3
+    - light.dimmable_light_2
+    - light.dimmable_light_1
+    - light.dimmable_light_5
+    - light.dimmable_light_6
+
+Achterkamer:
+  name: Achterkamer
+  entities:
+    - light.hue_color_lamp_1
+    - light.hue_color_lamp_2
+      
+Algemeen:
+  name: Algemeen
+  entities:
+    - device_tracker.iphonevannova
+    - device_tracker.galaxys6
+    - device_tracker.galaxya82018
+Klimaat:
+  name: Het weer
+  entities:
+    - sensor.leeuwarden_symbol
+    - sensor.leeuwarden_temperature  
+    - sun.sun
+
+Energie:
+  name: Energie
+  entities:
+    - sensor.power_generation
+    - sensor.energy_generation
