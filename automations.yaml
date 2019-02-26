@@ -1,1 +1,19 @@
-[]
+- id: GetTemp
+  alias: Set temp slider
+  trigger:
+  - platform: mqtt
+    topic: 'nefit/status'
+  action:
+  - service: input_number.set_value
+    data_template:
+      entity_id: input_number.target_temp
+      value: sensor.set_temp.value
+- id: SetTemp
+  trigger:
+    platform: state
+    entity_id: input_number.target_temp
+  action:
+    service: mqtt.publish
+    data:
+      topic: nefit/set
+      payload_template: "{{ states.input_number.target_temp.state }}"

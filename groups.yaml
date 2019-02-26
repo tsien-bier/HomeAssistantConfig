@@ -7,6 +7,10 @@ default_view:
     - group.Klimaat
     - group.Energie
     - group.Keuken
+    - group.Verwarming
+    - group.Camera
+ #   - group.Zonnepanelen
+    - group.Input
 
 Keuken:
   name: Keuken
@@ -43,3 +47,28 @@ Energie:
   entities:
     - sensor.power_generation
     - sensor.energy_generation
+
+Verwarming:
+  name: Verwarming
+  entities:
+    - sensor.temperatuur
+    - sensor.set_temp
+    - sensor.buitentemperatuur
+
+Camera:
+  name: Camera
+  entities:
+    - camera.camera_garage  
+
+Input:
+  name: Input
+  entities:
+    - input_number.target_temp 
+
+
+
+#Zonnepanelen:
+#  name: Zonnepanelen
+#  entities:
+    
+    

@@ -22,6 +22,12 @@ frontend:
 # Enables configuration UI
 config:
 
+panel_iframe:
+  nodered:
+    title: Node-RED
+    icon: mdi:sitemap
+    url: http://hassio.fritz.box:1880
+
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
 #   base_url: example.duckdns.org:8123
@@ -66,7 +72,7 @@ sun:
 # Device Tracker
 device_tracker:
   - platform: fritz
-    host: 192.168.2.254
+    host: 192.168.178.1
     interval_seconds: 10
     consider_home: 180
     track_new_devcices: false
@@ -74,6 +80,29 @@ device_tracker:
 # Text to speech
 tts:
   - platform: google
+
+#MQTT
+mqtt:
+  broker: hassio.fritz.box
+  client_id: home_assistant
+  username: !secret mqttuser
+  password: !secret mqttpassword
+
+#Input test
+input_number:
+  target_temp:
+    name: Target Heater Temperature Slider
+    min: 10
+    max: 25
+    step: 0.5
+    unit_of_measurement: "°C"  
+    icon: mdi:target
+
+
+camera:
+  - platform: mjpeg
+    name: Camera garage
+    mjpeg_url: http://192.168.178.210:8889
 
 # Cloud
 cloud:
